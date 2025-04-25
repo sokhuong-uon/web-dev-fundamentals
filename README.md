@@ -54,25 +54,60 @@ Meta tags are HTML elements that provide metadata about a webpage. They are plac
    - Tells Internet Explorer to use the latest rendering engine
    - Helps ensure consistent display across different versions of IE
 
-8. **Open Graph Tags**
+8. **Open Graph Tags (Facebook)**
    ```html
    <meta property="og:title" content="Hi Mom - Web Development Demo">
    <meta property="og:description" content="A simple webpage to demonstrate HTML meta tags">
    <meta property="og:image" content="https://example.com/path/to/image.jpg">
    <meta property="og:image:width" content="1200">
    <meta property="og:image:height" content="630">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://example.com">
    ```
-   - Used for social media sharing
-   - Controls how the page appears when shared on platforms like Facebook
+   - Used for social media sharing on Facebook and other platforms
+   - Controls how the page appears when shared
    - `og:title` sets the title for social media shares
    - `og:description` sets the description for social media shares
    - `og:image` specifies the image to display when the page is shared
    - `og:image:width` and `og:image:height` define the image dimensions
-   - Recommended image size is 1200x630 pixels for optimal display on social media
+   - `og:type` specifies the type of content (website, article, etc.)
+   - `og:url` specifies the canonical URL of the page
+   - Recommended image size is 1200x630 pixels for optimal display
+
+9. **Twitter Card Tags**
+   ```html
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Hi Mom - Web Development Demo">
+   <meta name="twitter:description" content="A simple webpage to demonstrate HTML meta tags">
+   <meta name="twitter:image" content="https://example.com/path/to/image.jpg">
+   <meta name="twitter:site" content="@yourtwitterhandle">
+   ```
+   - Controls how the page appears when shared on Twitter
+   - `twitter:card` specifies the type of card (summary, summary_large_image, etc.)
+   - `twitter:title` sets the title for Twitter shares
+   - `twitter:description` sets the description for Twitter shares
+   - `twitter:image` specifies the image to display
+   - `twitter:site` links to the website's Twitter account
+   - Recommended image size is 1200x630 pixels
+
+10. **Discord Embed Tags**
+    ```html
+    <meta name="theme-color" content="#5865F2">
+    <meta property="discord:embed" content="true">
+    <meta property="discord:embed:title" content="Hi Mom - Web Development Demo">
+    <meta property="discord:embed:description" content="A simple webpage to demonstrate HTML meta tags">
+    <meta property="discord:embed:image" content="https://example.com/path/to/image.jpg">
+    ```
+    - Controls how links appear when shared in Discord
+    - `theme-color` sets the embed color (Discord's brand color is #5865F2)
+    - `discord:embed` enables Discord's embed feature
+    - `discord:embed:title` sets the title for Discord embeds
+    - `discord:embed:description` sets the description
+    - `discord:embed:image` specifies the image to display
 
 Meta tags are important for:
 - Search Engine Optimization (SEO)
-- Social media sharing
+- Social media sharing (Facebook, Twitter, Discord)
 - Browser compatibility
 - Mobile responsiveness
 - Character encoding
